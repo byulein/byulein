@@ -1,0 +1,63 @@
+extends layout
+
+block content
+
+  style
+    div.about{color:#fff;}
+    div.about>div{margin-top:15px;}
+    div.about h3{line-height:15px;}      
+    div.about a{color:#EFDE7E !important}
+    div.about .about_head{font-size:30px;color:#fff081;font-weight:bold;}
+    div.about .about_summary{font-size:15px;font-style:italic}      
+    div.about .about_contact{}
+    div.about .about_language{}
+    div.about .about_bio{}
+    div.bio{color:#fff;}
+    div.twitter{color:#fff;}
+    div.twitter a{color:#fff !important}
+    div.twitter .twitter_head{margin-top:15px;font-size:25px;color:#fff081;font-weight:bold;}
+    div.twitter ul.twitter_body{padding:0px;margin:0px;font-size:15px;background-color:#000}
+    div.twitter ul.twitter_body li.on{}
+    div.twitter ul.twitter_body li{list-style:none;margin-bottom:3px;padding:8px 8px 8px 0px;min-height:30px}
+    div.twitter ul.twitter_body li .name{float:left;margin-right:15px;font-weight:bold;}
+    div.twitter ul.twitter_body li .created_at{}
+    
+    div.blog{color:#fff;}
+    div.blog a{color:#fff !important}
+    div.blog .blog_head{margin-top:15px;font-size:25px;color:#fff081;font-weight:bold;}
+    div.blog ul.blog_body{padding:0px;margin:0px;font-size:15px;background-color:#000}
+    div.blog ul.blog_body li.on{}
+    div.blog ul.blog_body {padding:6px 0px}
+    div.blog ul.blog_body li{list-style:none;margin-bottom:0px;padding:2px 8px 2px 0px;}
+    div.blog ul.blog_body li .title{margin-right:15px;}
+    div.blog ul.blog_body li .date{}
+    
+  div.row-fluid
+    div.span4
+      img(src='/images/byulein.jpg', style='width: auto; height: auto')
+    div.span8.about
+      div.about_head Park In Cheon 
+      div.about_summary Windows, Web Developer
+
+      div.about_bio.
+
+      div.about_contact.
+        <h3>Contact</h3>
+        EMAIL : byule (at) byule.com<br>
+        Twitter : <a href='http://twitter.com/byulein' target='_blank'>@byulein</a> <br>
+        Facebook : <a href='http://www.facebook.com/byulein' target='_blank'>/byulein</a>
+    
+      div.about_language.
+        <h3>Language</h3>
+        - 업무적 : javascript, java, .net, php, asp, oracle, mssql <br>
+        - 관심 : ruby on rails , node.js, Backbone.js, MongoDB, Bootstrap
+    
+  div.row-fluid
+    div.span4.twitter
+      div.twitter_head Twitter
+      ul.twitter_body
+    div.span8.blog
+      div.blog_head Blog
+      ul.blog_body
+
+  script(src='/script/about.js')
