@@ -28,7 +28,6 @@ app.configure('development', function(){
 });
 
 app.get('/', routes.about);
-app.get('/twitter', routes.twitter);
 
 http = http.createServer(app);
 io = io.listen(http);
