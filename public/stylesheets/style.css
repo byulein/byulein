@@ -1,3 +1,25 @@
 body {
   background-color: #000;
 }
+
+div.about{color:#fff;}
+div.about>div{margin-top:15px;}
+div.about h3{line-height:15px;}      
+div.about a{color:#EFDE7E !important}
+div.about ul{padding:0px;margin:0px;font-size:15px;background-color:#000}
+div.about ul li{list-style:none;}
+div.about ul li a{color:#fff !important}
+div.about .about_head{font-size:30px;color:#fff081;font-weight:bold;}
+div.about .about_summary{font-size:15px;font-style:italic}      
+div.bio{color:#fff;}
+
+
+div.blog{color:#fff;}
+div.blog a{color:#fff !important}
+div.blog .blog_head{margin-top:15px;font-size:25px;color:#fff081;font-weight:bold;}
+div.blog ul.blog_body{padding:0px;margin:0px;font-size:15px;background-color:#000}
+div.blog ul.blog_body li.on{}
+div.blog ul.blog_body {padding:6px 0px}
+div.blog ul.blog_body li{list-style:none;margin-bottom:0px;padding:2px 8px 2px 0px;}
+div.blog ul.blog_body li .title{margin-right:15px;}
+div.blog ul.blog_body li .date{}

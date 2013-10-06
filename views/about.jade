@@ -1,30 +1,6 @@
 extends layout
 
 block content
-
-  style
-    div.about{color:#fff;}
-    div.about>div{margin-top:15px;}
-    div.about h3{line-height:15px;}      
-    div.about a{color:#EFDE7E !important}
-    div.about .about_head{font-size:30px;color:#fff081;font-weight:bold;}
-    div.about .about_summary{font-size:15px;font-style:italic}      
-    div.about .about_contact{}
-    div.about .about_language{}
-    div.about .about_bio{}
-    div.bio{color:#fff;}
-
-    
-    div.blog{color:#fff;}
-    div.blog a{color:#fff !important}
-    div.blog .blog_head{margin-top:15px;font-size:25px;color:#fff081;font-weight:bold;}
-    div.blog ul.blog_body{padding:0px;margin:0px;font-size:15px;background-color:#000}
-    div.blog ul.blog_body li.on{}
-    div.blog ul.blog_body {padding:6px 0px}
-    div.blog ul.blog_body li{list-style:none;margin-bottom:0px;padding:2px 8px 2px 0px;}
-    div.blog ul.blog_body li .title{margin-right:15px;}
-    div.blog ul.blog_body li .date{}
-    
   div.row-fluid
     div.span4
       img(src='/images/byulein.jpg', style='width: auto; height: auto')
@@ -33,21 +9,31 @@ block content
       div.about_summary Windows, Web Developer
 
       div.about_bio.
-
-      div.about_contact.
         <h3>Contact</h3>
         EMAIL : byule (at) byule.com<br>
         Twitter : <a href='http://twitter.com/byulein' target='_blank'>@byulein</a> <br>
         Facebook : <a href='http://www.facebook.com/byulein' target='_blank'>/byulein</a>
     
-      div.about_language.
-        <h3>Language</h3>
-        - 업무적 : javascript, java, .net, php, asp, oracle, mssql <br>
-        - 관심 : node.js, Backbone.js, angular.js, MongoDB, Bootstrap
-    
+      div.about_bio.
+        <h3>Sign...</h3>
+        - Javascript, Java, .Net, php, asp, oracle, mssql, mysql<br>
+        - node.js, Backbone.js, angular.js, MongoDB<br>
+        - iPhone4, Macbook air 2012, iPad, Canon EOS 450D
+ 
   div.row-fluid
-    div.span12.blog
+    div.span4.blog
       div.blog_head Blog
       ul.blog_body
+
+    div.span8.about
+      div.about_head Site
+      div.about_bio.
+        <ul>
+          <li><a href='http://byulein.com' target='_blank'>Byulein.com - 개인 프로필</a></li>
+          <li><a href='http://sayjs.com' target='_blank'>SayJS.com - 블로그</a></li>
+          <li><a href='http://nginx.co.kr' target='_blank'>Nginx.co.kr - NginX</a></li>
+        </ul>
+        
+
 
   script(src='/script/about.js')
